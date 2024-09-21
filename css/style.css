@@ -14,6 +14,16 @@ body{
     /* padding-top: -30; */
 }
 
+div.locked {
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
 .botones{
     padding: 9px;
     border-radius: 40px;
