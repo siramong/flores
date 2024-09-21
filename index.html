@@ -12,14 +12,19 @@
 
 <body>
     <div class="locked" id="locked"></div>
-    <script>
-        var end = new Date('2024-09-21');
-        var now = new Date();
-        if (end - now <= 0) {
-            var e = document.getElementById('locked');
-            e.parentElement.removeChild(e);
-        }
-    </script>
+
+<script>
+    // Fecha de desbloqueo
+    var end = new Date('2024-09-21T00:00:00');  // Asegúrate de usar el formato correcto para la fecha
+    var now = new Date();  // Fecha actual
+
+    // Verificar si ya pasó la fecha de desbloqueo
+    if (now >= end) {
+        // Si la fecha actual es mayor o igual a la de desbloqueo, remover el elemento
+        var e = document.getElementById('locked');
+        e.parentElement.removeChild(e);
+    }
+</script>
     <div class="greetings">
         <span>S</span>
         <span>o</span>
@@ -28,7 +33,7 @@
         <span>♡</span>
     </div>
     <div class="description">
-        <span>Esto es para ti mi Amor <3< /span>
+        <span>Esto es para ti mi Amor</span>
     </div>
     <div class="button">
         <button class="botones">
