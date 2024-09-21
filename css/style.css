@@ -15,6 +15,7 @@ body{
 }
 
 div.locked {
+    text-align: center;
     color: black;
     position: fixed;
     z-index: 100000;
