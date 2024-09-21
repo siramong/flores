@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="locked" id="locked"></div>
+    <div class="locked" id="locked"> Página bloqueada hasta el: <br> 21 de septiembre</div>
 
 <script>
     // Fecha de desbloqueo
-    var end = new Date('2024-09-21T00:00:00');  // Asegúrate de usar el formato correcto para la fecha
+    var end = new Date(Date.UTC(2024, 8, 21, 5, 0, 0));  // 8 es septiembre porque los meses en JS son 0 indexados  // Asegúrate de usar el formato correcto para la fecha
     var now = new Date();  // Fecha actual
 
     // Verificar si ya pasó la fecha de desbloqueo
